@@ -104,7 +104,8 @@
 
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet" >
+                    <form action="mailto:tanzinatania491991@gmail.com" method="post" enctype="text/plain" >
+                        <!-- <form name="submit-to-google-sheet"> -->
                         <input type="text" name="'Name" placeholder="'Your Name" required>
                         <input type="email" name="'Email" placeholder="'Your Email" required>
                         <textarea rows="'6" name="'Message" placeholder="'Your message" required></textarea>
@@ -118,8 +119,8 @@
 
     </div>       
     
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuv02PVv4Y_AwRh97iRICshNcqvTUNLW4KHJNfR_gF7ozCTqG2FxnBMm4R2fMVMTTJ/exec'
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxbU8-o7tOkuaNo-MkysgiN8CLjxIipOp8P7ZnbdIN7K1Tr3P-WsTNnjiwiXprBruB2cw/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
@@ -128,7 +129,7 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script> 
+      </script>  -->
     
 </body>
 </html>
