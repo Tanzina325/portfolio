@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Tani's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99e2c02e52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="logo">T</span>ANIA.</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-font"><div class="header-text">
+                <p>Fullstack web developer</p>
+            <h1>Hi, I'm <span class="name">Tanzina</span><br>Akter From Bangladesh</h1>
+            <a class="btn" href="https://drive.google.com/file/d/1TtVSjAiKNnaXCxsaZrEbZ1RbIEb0dGNm/view">Download Resume</a>
+            </div></div>
+        </div> 
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about women.jpg" alt="" >
+                </div>
+                <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa nam fuga, tenetur nobis quaerat? Fugiat ad asperiores nulla ratione soluta. Laborum, at perspiciatis! Ea consequuntur sit dolorem dolorum similique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="'services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+                <div class="services-list">
+                    <div>
+                        <h2 class="service-text">Web Design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                    </div>
+                    <div>
+                        <h2 class="service-text">Web develop</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                    </div>
+                    <div>
+                        <h2 class="service-text">UI/UX Design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                    </div>
+
+                </div>
+           
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+        </div>
+        <div class="work-list container">
+            <div class="work">
+                <img src="images/datascienceprinciples_resized.png" alt="">
+                <div class="layer">
+                    <h3  class="work-name">Educamb</h3>
+                    <p>This site displays data sciences courses. you can buy any course from this site.please visit this site </p>
+                    <a class="site" href="https://b610-learning-platform-c-cbd49.web.app/">visit site</a>
+                </div>
+            </div>
+            <div class="work-1">
+                <img src="images/Flank Steak with Pickled Onions.png" alt="">
+                <div class="layer">
+                    <h3 class="work-name">Home Food Services</h3>
+                    <p>This site displays home food services. you can order from this site.please visit this site </p>
+                    <a class="site" href="https://b6-a11-service-review.web.app/">visit site</a></div>
+            </div>
+            
+            
+            <div class="work-1">
+                <img src="images/yoga image.jpg" alt="">
+                <div class="layer"><h3  class="work-name">Yoga Exercise club</h3>
+                    <p>This site displays Yoga exercise. you can add any exercise from this site.please visit this site </p>
+                    <a class="site" href="https://strong-douhua-8e84e3.netlify.app/">visit site</a></div>
+            </div>
+        </div>
+    </div> 
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-light fa-paper-plane"></i>contact@example.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+8801792166684</p>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="'Name" placeholder="'Your Name" required>
+                        <input type="email" name="'Email" placeholder="'Your Email" required>
+                        <textarea rows="'6" name="'Message" placeholder="'Your message" required></textarea>
+                        <button class='btn'type="submit">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        >
+
+    </div>       
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuv02PVv4Y_AwRh97iRICshNcqvTUNLW4KHJNfR_gF7ozCTqG2FxnBMm4R2fMVMTTJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> 
+    
+</body>
+</html>
