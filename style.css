@@ -177,19 +177,30 @@ margin-bottom: 10px;
 
 }
 .screen{
-    text-align: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: space-around;
+    grid-gap:60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
-.works{
-    width: 23%;
-    margin: 15px;
+.works img{
+    width: 90%;
+    
 }
 .works2{
-    width: 30%;
-    margin: 15px;
+    margin-right:40px ;
 }
-.works3{
-    width: 26%;
-    margin: 15px;
+.works2 img{
+    width: 108%;
+    height: 100%;
+    
+    
+}
+.works3 img{
+    width: 100%;
+    
 }
 .work-name{
     color: #ff004f;
