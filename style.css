@@ -176,6 +176,21 @@ margin-bottom: 10px;
     
 
 }
+.screen{
+    text-align: center;
+}
+.works{
+    width: 23%;
+    margin: 15px;
+}
+.works2{
+    width: 30%;
+    margin: 15px;
+}
+.works3{
+    width: 26%;
+    margin: 15px;
+}
 .work-name{
     color: #ff004f;
 }
