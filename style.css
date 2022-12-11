@@ -87,6 +87,7 @@ color: #ababab;
 }
 .about-col-1 img{
     width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 .about-col-2{
@@ -109,9 +110,20 @@ margin-bottom: 10px;
 .btn-1{background: #ff004f;
     padding:10px 15px ;
     border-radius: 10px;
+    border: none;
     color: #fff;
     font-size: large;
     margin: 10px 0px;
+    cursor: pointer;
+
+}
+.btn-2{background: green;
+    padding:10px 15px ;
+    border-radius: 10px;
+    color: #fff;
+    font-size: large;
+    margin: 10px 0px;
+    cursor: pointer;
 
 }
 .services{
@@ -166,6 +178,16 @@ margin-bottom: 10px;
     
     display: block;
 }
+.work-1{
+    background: #fff;
+    border-radius: 10px;
+    color: #080808;
+}
+.work{
+    background: #fff;
+    border-radius: 10px;
+    color: #080808;
+}
 .work img{
     width: 117%;
 
@@ -183,11 +205,21 @@ margin-bottom: 10px;
     justify-content: space-around;
     grid-gap:60px;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.skill1{
+    margin-bottom: 40px;
 }
 .works img{
     width: 90%;
     
+}
+.works1 img{
+    width: 108%;
+    
+}
+.works1{
+    height: 90%;
 }
 .works2{
     margin-right:40px ;
@@ -246,9 +278,18 @@ form input, form textarea{
     cursor: pointer;
     
 }
-nav .fas{
+nav .fa-solid{
     display: none;
 }
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
 @media only screen and (max-width:600px){
     #header{
         width: 100%;
@@ -312,5 +353,13 @@ nav ul .fa-solid{
     top: 25px;
     left: 25px;
     cursor: pointer;
+}
+.works img{
+    width: 95%;
+    
+}
+.works1 img{
+    width: 95%;
+    height: 115%;
 }
 
