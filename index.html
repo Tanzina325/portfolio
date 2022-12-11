@@ -8,25 +8,37 @@
 
     <title>Tani's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" type="text/javascript"></script> -->
     <script src="https://kit.fontawesome.com/99e2c02e52.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("UzxqMbP6XZ22vh8CB");
+   })();
+</script> -->
+    
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <h1><span class="logo">T</span>ANIA.</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i onclick="closemenu()" class="fa-solid fa-circle-xmark"></i>
                 </ul>
+                <i onclick="openmenu()" class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-font"><div class="header-text">
                 <p>Fullstack web developer</p>
             <h1>Hi, I'm <span class="name">Tanzina</span><br>Akter From Bangladesh</h1>
-            <a class="btn" href="https://drive.google.com/file/d/1TtVSjAiKNnaXCxsaZrEbZ1RbIEb0dGNm/view">Download Resume</a>
+            <a  href="https://drive.google.com/file/d/1TtVSjAiKNnaXCxsaZrEbZ1RbIEb0dGNm/view"><button class="btn">Download Resume</button></a>
             </div></div>
         </div> 
     </div>
@@ -38,7 +50,18 @@
                 </div>
                 <div class="about-col-2">
                <h1 class="sub-title">About Me</h1>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa nam fuga, tenetur nobis quaerat? Fugiat ad asperiores nulla ratione soluta. Laborum, at perspiciatis! Ea consequuntur sit dolorem dolorum similique.</p>
+               <p>I'm Tanzina Akter .I had completed my graduation and post graduation om Mathematics under Dhaka University. I have much curiosity on Programming languages and coding .So I had deccided to learn coding and now I am fullstack web developer. I have done 10 plus projects on my own .I want to be a renowned web developer.For this, I learn and practise code and explore new tecnology evryday.Now It is my passion.</p>
+               <p class="skill">Skills</p>
+               <button class="btn-1">HTML5</button>
+               <button class="btn-1">CSS3</button>
+               <button class="btn-1">Javascript</button>
+               <button class="btn-1">Bootstrap</button>
+               <button class="btn-1">TailwindCSS</button>
+               <button class="btn-1">React.js</button>
+               <button class="btn-1">Node.js</button>
+               <button class="btn-1">Express</button>
+               <button class="btn-1">MongoDB</button>
+               <button class="btn-1">Firebase</button>
                 </div>
             </div>
         </div>
@@ -49,15 +72,15 @@
                 <div class="services-list">
                     <div>
                         <h2 class="service-text">Web Design</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                        <p>Here normal websites are designed perfectly .Not any professional websites are designed.Responsive websites are noticeable.  </p>
                     </div>
                     <div>
                         <h2 class="service-text">Web develop</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                        <p>here websites are developed so perfectly.Whether it is normal or professional it doesn't matter.Modern tecnologies are used to build a website.React.js,Node.js are preferrable. </p>
                     </div>
                     <div>
                         <h2 class="service-text">UI/UX Design</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde consectetur architecto cupiditate eveniet temporibus tempora mollitia ut eos culpa?</p>
+                        <p>Here UI/UX of normal websites are designed perfectly .Not any professional websites are designed.Responsive websites are noticeable.</p>
                     </div>
 
                 </div>
@@ -99,17 +122,18 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-light fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-envelope"></i></i>tanzinatania491991@gmail.com</p>
                     <p> <i class="fa-solid fa-phone"></i>+8801792166684</p>
 
                 </div>
                 <div class="contact-right">
-                    <form action="mailto:tanzinatania491991@gmail.com" method="post" enctype="text/plain" >
-                        <!-- <form name="submit-to-google-sheet"> -->
-                        <input type="text" name="'Name" placeholder="'Your Name" required>
-                        <input type="email" name="'Email" placeholder="'Your Email" required>
-                        <textarea rows="'6" name="'Message" placeholder="'Your message" required></textarea>
-                        <button class='btn'type="submit">Submit</button>
+                    
+                            <form id="form">
+                        <input type="text"  name="from_name" id="from_name" placeholder="Your Name" required>
+                        <input type="email" name="email_id" id="email_id" placeholder="Your Email" required>
+                        <input type="text" name="message" id="message" placeholder="Your message" required>
+                        <button id="button" 
+                        value="Send Email" class='btn'type="submit">Submit</button>
                     </form>
                 </div>
                 
@@ -118,18 +142,49 @@
         >
 
     </div>       
+    <script>
+        var sidemenu =document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right ='0'
+        }
+        function closemenu(){
+            sidemenu.style.right ='-200px'
+        }
+    </script>
     
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxbU8-o7tOkuaNo-MkysgiN8CLjxIipOp8P7ZnbdIN7K1Tr3P-WsTNnjiwiXprBruB2cw/exec'
-        const form = document.forms['submit-to-google-sheet']
+        
+        <script>
+            const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_a3paqlo';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+      form.reset();
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+        </script>
       
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>  -->
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('UzxqMbP6XZ22vh8CB')
+    </script>
+      
+      
     
 </body>
 </html>
